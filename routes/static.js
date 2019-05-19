@@ -18,4 +18,10 @@ router.get('/users', (req, res) => {
     })
 });
 
+router.post('/send', (req, res) => {
+    console.log('post ', req.body);
+    users.push({ name : req.body.name });
+    return res.redirect('/users');
+});
+
 module.exports = router;
