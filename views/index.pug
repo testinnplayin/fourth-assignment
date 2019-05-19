@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{title}
+    body
+        h1 User Form
+        form#user-form(method="POST", action="/send")
+            .form-group
+                label.form-label(for="user-name") Enter Name:
+                input.form-input#user-name(name="user-form", type="text", placeholder="Please enter your name")
+            button.form-btn(type="submit") Submit
