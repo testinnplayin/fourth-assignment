@@ -1,0 +1,11 @@
+extends layouts/navbar.pug
+
+block content
+
+    if users.length > 0
+        ul.user-ul
+            each user in users
+                li.user-li #{user.name}
+    else
+        p.user-list-p No users
+
